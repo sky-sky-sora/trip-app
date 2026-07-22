@@ -1,0 +1,93 @@
+{
+  "trip": {
+    "title": "旅行2026",
+    "startDate": "2026-08-01",
+    "endDate": "2026-08-05",
+    "meetingPlace": "羽田空港 第1ターミナル",
+    "meetingTime": "09:00集合",
+    "passcode": "1234"
+  },
+  "members": [
+    { "id": "m1", "name": "Sora", "color": "#4FC3F7" },
+    { "id": "m2", "name": "A", "color": "#81C784" },
+    { "id": "m3", "name": "B", "color": "#FFB74D" },
+    { "id": "m4", "name": "C", "color": "#F48FB1" }
+  ],
+  "flights": [
+    {
+      "memberId": "m1",
+      "direction": "outbound",
+      "airline": "ANA",
+      "flightNumber": "NH001",
+      "seat": "12A",
+      "departureTime": "2026-08-01 11:00",
+      "arrivalTime": "2026-08-01 13:00",
+      "reservationNumber": "ABC123",
+      "pdfUrl": "https://drive.google.com/your-pdf-link"
+    }
+  ],
+  "accommodation": {
+    "name": "ホテル名",
+    "address": "東京都新宿区○○",
+    "checkIn": "2026-08-01 15:00",
+    "checkOut": "2026-08-05 11:00",
+    "reservationNumber": "RSV-12345",
+    "mapUrl": "https://maps.google.com/?q=東京都新宿区",
+    "wifi": "HotelWifi",
+    "wifiPassword": "password123",
+    "doorCode": "1234",
+    "notes": "チェックイン時にパスポートが必要です"
+  },
+  "schedule": [
+    {
+      "date": "2026-08-01",
+      "time": "11:00",
+      "title": "羽田空港 出発",
+      "place": "羽田空港",
+      "memo": ""
+    },
+    {
+      "date": "2026-08-01",
+      "time": "15:00",
+      "title": "ホテルチェックイン",
+      "place": "ホテル名",
+      "memo": ""
+    }
+  ],
+  "payments": [
+    {
+      "id": "p1",
+      "date": "2026-08-01",
+      "description": "ホテル代",
+      "amount": 80000,
+      "category": "hotel",
+      "paidByMemberId": "m1",
+      "splitAmong": ["m1", "m2", "m3", "m4"]
+    }
+  ],
+  "packing": [
+    { "id": "pk1", "name": "パスポート", "category": "documents" },
+    { "id": "pk2", "name": "航空券", "category": "documents" },
+    { "id": "pk3", "name": "着替え3日分", "category": "clothing" },
+    { "id": "pk4", "name": "充電器", "category": "electronics" },
+    { "id": "pk5", "name": "常備薬", "category": "medicine" }
+  ],
+  "places": [
+    {
+      "id": "pl1",
+      "name": "浅草寺",
+      "description": "東京最古の寺",
+      "address": "東京都台東区浅草2丁目3-1",
+      "mapUrl": "https://maps.google.com/?q=浅草寺",
+      "votes": ["m1", "m2"]
+    }
+  ],
+  "announcements": [
+    {
+      "id": "a1",
+      "title": "集合場所が変更になりました",
+      "body": "第1ターミナルの北口に変更になりました。",
+      "createdAt": "2026-07-01"
+    }
+  ]
+}
